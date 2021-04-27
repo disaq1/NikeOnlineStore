@@ -1,0 +1,19 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "scaffolding.scss";
+
+@import "_catalog";
+@import "_header";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
