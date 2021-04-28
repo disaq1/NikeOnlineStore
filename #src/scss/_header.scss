@@ -71,11 +71,11 @@
     }
 
     &:nth-child(1) .list__item--link::before {
-        background: url(../img/c.jpg);
+        background: url(../img/collection_af.jpg);
         background-size: cover;
     }
     &:nth-child(2) .list__item--link::before {
-        background: url(../img/collection_2.jpg);
+        background: url(../img/collection_vapormax.jpg);
         background-size: cover;
     }
     &:nth-child(3) .list__item--link::before {
@@ -83,11 +83,11 @@
         background-size: cover;
     }
     &:nth-child(4) .list__item--link::before {
-        background: url(../img/collection_4.jpg);
+        background: url(../img/collection_pegasus.png);
         background-size: cover;
     }
     &:nth-child(5) .list__item--link::before {
-        background: url(../img/collection_5.jpg);
+        background: url(../img/collection_react.png);
         background-size: cover;
     }
 }
