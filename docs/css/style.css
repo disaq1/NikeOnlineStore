@@ -38,36 +38,8 @@ input:focus {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  background: #000;
   min-height: 100vh;
-}
-
-.catalog::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#f0f));
-  background: -o-linear-gradient(#f00, #f0f);
-  background: linear-gradient(#f00, #f0f);
-  -webkit-clip-path: circle(30% at right 70%);
-          clip-path: circle(30% at right 70%);
-}
-
-.catalog::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2196f3), to(#e91e63));
-  background: -o-linear-gradient(#2196f3, #e91e63);
-  background: linear-gradient(#2196f3, #e91e63);
-  -webkit-clip-path: circle(20% at 10% 10%);
-          clip-path: circle(20% at 10% 10%);
+  background: #000000;
 }
 
 .catalog__title {
@@ -144,7 +116,7 @@ input:focus {
 }
 
 .card:hover .card__img {
-  content: url(../img/nike.svg);
+  content: url(../img/nike.svg) !important;
   -webkit-transform: scale(0.5) translateX(-135px) translateY(-300px) rotate(30deg);
       -ms-transform: scale(0.5) translateX(-135px) translateY(-300px) rotate(30deg);
           transform: scale(0.5) translateX(-135px) translateY(-300px) rotate(30deg);
