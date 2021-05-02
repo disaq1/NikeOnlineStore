@@ -18,22 +18,39 @@
 
 .parallax__label {
     display: flex;
-    font-size: 18px;
-    letter-spacing: 6px;
-    margin: 0 0 30px 0;
+    margin: 20px 10px;
     align-items: center;
 
     &::before {
-        flex: 0 0 70px;
+        flex: 0 0 40px;
         content: '';
-        margin: 0 30px 0 0;
+        margin: 0 10px 0 40px;
         background: red;
-        height: 1px;
+        height: 4px;
+    }
+
+    &--link {
+        color: $trueWhite;
+        text-shadow: 2px 2px black;
+        font-size: 48px;
+        font-weight: 900;
+        letter-spacing: 6px;
+        text-decoration: none;
+        display: flex;
+        position: relative;
+
+        transition: 0.5s;
+        &:hover {
+            color: rgb(216, 210, 210);
+        }
     }
 }
 
 .parallax__title {
-    font-size: 88px;
+    text-align: center;
+    font-size: 60px;
+    color: $trueWhite;
+    text-shadow: 2px 2px black;
 }
 
 .parallax__images {
@@ -43,10 +60,6 @@
     top: -10%;
     left: -10%;
     z-index: 1;
-}
-
-.images-parallax {
-
 }
 
 .images-parallax__item {
