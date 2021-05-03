@@ -46,17 +46,6 @@ window.onload = function () {
             //Получаем проценты
             coordXprocent = coordX / parallaxWidth * 100;
             coordYprocent = coordY / parallaxHeight * 100;
-        });
-
-
-
-        console.log(content);  
-        console.log(clouds);  
-        console.log(mountains); 
-        console.log(human); 
-        console.log(positionX); 
-        console.log(positionY);  
-        console.log(distX);  
-        console.log(distY);  
+        }); 
     }
 }
