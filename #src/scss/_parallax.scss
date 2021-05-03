@@ -48,9 +48,45 @@
 
 .parallax__title {
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     color: $trueWhite;
     text-shadow: 2px 2px black;
+
+    @media screen and (min-width: 425px) {
+        font-size: 40px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 50px;
+    }
+    @media screen and (min-width: 1024px) {
+        font-size: 60px;
+    }
+}
+
+.arrow {
+    z-index: 10;
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid $trueWhite;
+    box-shadow: 0 5px 15px #2e5274;
+    background: #2e5274;
+
+    animation: arrowAnimation 2s infinite reverse ease-in;
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes arrowAnimation {
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 .parallax__images {
